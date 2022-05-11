@@ -1,0 +1,74 @@
+{
+  "name": "dfmgux",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/eslint-parser": "^7.17.0",
+    "@carbon/icons-react": "^10.49.0",
+    "@carbon/themes": "^10.54.0",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.6.4",
+    "@tririga/tririga-react-components": "^1.2.0",
+    "ajv": "^8.11.0",
+    "carbon-addons-iot-react": "^2.148.0",
+    "carbon-components": "^10.56.0",
+    "carbon-components-react": "^7.57.1",
+    "carbon-icons": "^7.0.7",
+    "classnames": "^2.3.1",
+    "d3": "^7.4.4",
+    "env-cmd": "^10.1.0",
+    "eslint": "8.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-standard": "^4.1.0",
+    "husky": "^4.3.8",
+    "immutable": "^4.0.0",
+    "monaco-editor": "^0.21.2",
+    "node-sass": "^7.0.1",
+    "prettier": "^2.6.2",
+    "pretty-quick": "^2.0.2",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.3.1",
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.6.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "env-cmd -x -f ./.env.development.local tri-deploy -t \\$REACT_APP_TRIRIGA_URL -u \\$TRIRIGA_USER -p \\$TRIRIGA_PASSWORD -c -m 3",
+    "build:deploy": "npm run build && npm run deploy",
+    "lint": "./node_modules/.bin/eslint src",
+    "lint-fix": "./node_modules/.bin/eslint --fix src --ext .js",
+    "pretty-quick": "pretty-quick"
+  },
+  "eslintConfig": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": ".",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pretty-quick && npm run lint",
+      "pre-push": "npm run lint"
+    }
+  }
+}

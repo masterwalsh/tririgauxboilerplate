@@ -1,0 +1,9 @@
+{
+  "SESSION_EXPIRED_ERROR_TITLE": "Session expired",
+  "SESSION_EXPIRED_ERROR_DESCRIPTION": "Your session has expired. You will have to refresh your browser to start a new session.",
+  "SECURITY_ERROR_TITLE": "Security error",
+  "SECURITY_ERROR_DESCRIPTION": "You do not have permission to perform the action.",
+  "SECURITY_ERROR_ACTION": "Contact your TRIRIGA administrator for assistance.",
+  "GENERAL_ERROR_TITLE": "Error",
+  "GENERAL_ERROR_DESCRIPTION": "An error occurred. Please contact your server administrator."
+}

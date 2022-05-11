@@ -1,0 +1,6 @@
+{
+  "HOME_HEADER": "Welcome to the UX Web Application Home Page",
+  "CURRENT_HEADER": "Current user details",
+  "UNAUTHORIZED_TITLE": "You do not have permission to access this page.",
+  "UNAUTHORIZED_DESCRIPTION": "Due to either a session timeout or unauthorized access, you do not have permission to access this page."
+}

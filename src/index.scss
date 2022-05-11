@@ -1,0 +1,35 @@
+[hidden] {
+  display: none !important;
+}
+
+// Feature flags
+$css--font-face: true;
+$css--helpers: true;
+$css--body: true;
+$css--use-layer: true;
+$css--reset: true;
+$css--typography: true;
+$css--plex: true;
+
+@import "@carbon/themes/scss/themes";
+
+// Use the gray 10 theme
+$carbon--theme: $carbon--theme--g10;
+@include carbon--theme();
+
+@import "carbon-components/scss/globals/scss/css--reset";
+@import "carbon-components/scss/globals/scss/css--font-face";
+@import "carbon-components/scss/globals/scss/css--helpers";
+@import "carbon-components/scss/globals/scss/css--body";
+
+//Carbon components styles
+@import "carbon-components/scss/components/list/list";
+@import "carbon-components/scss/components/loading/loading";
+@import "carbon-components/scss/components/modal/modal";
+@import "carbon-components/scss/components/notification/toast-notification";
+
+//App styles
+@import "./styles/page";
+@import "./app/TririgaUXWebApp";
+@import "./components/Components";
+@import "./pages/Pages";

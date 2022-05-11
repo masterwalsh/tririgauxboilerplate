@@ -1,0 +1,20 @@
+.footerButtons {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: $layout-01;
+
+  &__button {
+    display: flex;
+    flex: 1 1 0;
+  }
+
+  [dir="ltr"] &__button:last-of-type {
+    margin-left: $spacing-05;
+  }
+
+  [dir="rtl"] &__button:last-of-type {
+    margin-right: $spacing-05;
+  }
+}

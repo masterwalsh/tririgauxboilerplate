@@ -1,0 +1,21 @@
+.unauthorizedPage {
+  padding-left: 10%;
+  padding-top: 10%;
+  width: 80%;
+
+  &__header {
+    width: 50%;
+    padding-top: $layout-03;
+    @include carbon--type-style("productive-heading-05");
+  }
+
+  &__description {
+    width: 50%;
+    padding-top: $layout-02;
+    @include carbon--type-style("body-short-01");
+  }
+
+  &__login {
+    margin-top: $layout-02;
+  }
+}
